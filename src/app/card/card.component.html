@@ -1,0 +1,8 @@
+<div class="container">
+    <img [src]="card.image" [alt]="card.title">
+    <p>{{card.title | uppercase}}</p>
+    <p>{{card.description}}</p>
+    <p>{{card.releaseDate}}</p>
+    <p *ngIf="card.citaition"> {{ card.citaition}}</p>
+    <p>  <input type="text" [(ngModel)]=" card.citaition"></p>
+</div>
